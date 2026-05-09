@@ -175,8 +175,6 @@ function OriginalCardGames(listAllCardsGames){
 
 }
 
-
-
 function GuessNumber()
 {
   let input = document.querySelector(".guess-number__input");
@@ -201,18 +199,18 @@ function GuessNumber()
                     userAttempt = input.value;
                     
                     if(userAttempt > randomNumber) {
-                        out_result.textContent = "Не угодал";
+                        out_result.textContent = "Не угадал";
                         out_help.textContent = "Перелет";
                         item++;
                         out_attempt.textContent = item;
                        }else if(userAttempt < randomNumber)
                              {
-                               out_result.textContent = "Не угодал";
+                               out_result.textContent = "Не угадал";
                                out_help.textContent = "Недолет";
                                item++;
                                out_attempt.textContent = item;
                              }else{
-                                    out_result.textContent = "Угодал";
+                                    out_result.textContent = "Угадал";
                                     out_help.textContent = "Точно в цель!";
                                     item++;
                                     out_attempt.textContent = item;
