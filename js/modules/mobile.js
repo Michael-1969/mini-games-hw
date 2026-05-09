@@ -175,6 +175,10 @@ function OriginalCardGames(listAllCardsGames){
 
 }
 
+function SimpleArithmetic(){
+      console.log("simple-arithmetic");
+}
+
 function GuessNumber()
 {
   let input = document.querySelector(".guess-number__input");
@@ -250,7 +254,7 @@ function FlipCard()
             switch(event.currentTarget.dataset.game)
             {
               case "guess-number" : GuessNumber(); break;
-              case "simple-arithmetic": console.log("simple-arithmetic"); break;
+              case "simple-arithmetic": SimpleArithmetic(); break;
               default: if(event.currentTarget.dataset.close  === 'close')
                       {
                           const inner = event.target.closest('.flip-card__inner'); 
