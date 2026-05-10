@@ -175,9 +175,7 @@ function OriginalCardGames(listAllCardsGames){
 
 }
 
-function SimpleArithmetic(){
-      console.log("simple-arithmetic");
-}
+
 
 function GuessNumber()
 {
@@ -203,18 +201,18 @@ function GuessNumber()
                     userAttempt = input.value;
                     
                     if(userAttempt > randomNumber) {
-                        out_result.textContent = "Не угадал";
+                        out_result.textContent = "Не угодал";
                         out_help.textContent = "Перелет";
                         item++;
                         out_attempt.textContent = item;
                        }else if(userAttempt < randomNumber)
                              {
-                               out_result.textContent = "Не угадал";
+                               out_result.textContent = "Не угодал";
                                out_help.textContent = "Недолет";
                                item++;
                                out_attempt.textContent = item;
                              }else{
-                                    out_result.textContent = "Угадал";
+                                    out_result.textContent = "Угодал";
                                     out_help.textContent = "Точно в цель!";
                                     item++;
                                     out_attempt.textContent = item;
@@ -254,7 +252,7 @@ function FlipCard()
             switch(event.currentTarget.dataset.game)
             {
               case "guess-number" : GuessNumber(); break;
-              case "simple-arithmetic": SimpleArithmetic(); break;
+              case "simple-arithmetic": console.log("simple-arithmetic"); break;
               default: if(event.currentTarget.dataset.close  === 'close')
                       {
                           const inner = event.target.closest('.flip-card__inner'); 

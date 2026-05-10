@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
          else
            func.OriginalCardGames(document.querySelector('.about-games__cards'));
       });
-        func.FlipCard();
+
+     func.FlipCard();
      
    });
 
