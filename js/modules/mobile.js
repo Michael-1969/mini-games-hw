@@ -175,6 +175,8 @@ function OriginalCardGames(listAllCardsGames){
 
 }
 
+
+
 function GuessNumber()
 {
   let input = document.querySelector(".guess-number__input");
